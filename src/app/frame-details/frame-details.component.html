@@ -1,0 +1,12 @@
+<h2>Frame</h2>
+<a (click)="backClicked()">Back to study</a>
+<div *ngIf="product">
+  <img
+      class="frames"
+      src="{{product.url}}"
+      (click)="showMarkerArea()"
+      id="frame"
+      crossorigin="anonymous"
+    />
+
+</div>

@@ -1,0 +1,21 @@
+<h2>Meta-data</h2>
+<h2>Number of frames: 4</h2>
+
+<h2>Frames</h2>
+
+<div *ngFor="let product of products">
+  <h3>
+    <a [routerLink]="['/frames', product.id]">
+      <img
+      class="frames"
+      src="{{product.url}}"
+    />
+    </a>
+  </h3>
+</div>
+
+<!-- 
+Copyright Google LLC. All Rights Reserved.
+Use of this source code is governed by an MIT-style license that
+can be found in the LICENSE file at https://angular.io/license
+-->
